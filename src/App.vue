@@ -4,6 +4,7 @@
 </template>
 
 <script>
+import { tsImportEqualsDeclaration } from '@babel/types';
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
@@ -19,7 +20,11 @@ export default {
     email: "";
     phone: ""
 
-  }
+  },
+  two(){
+    this.axios.get('').
+    then((response) => {console.log(response.data), this.name = "ll", this.photo = "ll", this.fio = "ll", this.adress = "ll", this.email = "ll", this.phone = "ll"}
+  )}
 }
 </script>
 
