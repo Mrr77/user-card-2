@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HelloWorld msg="Welcome to Your Vue.js App" :name="name" :photo="photo" :fio="fio" :adress="adress" :email="email" :phone="phone"/>
 </template>
 
 <script>
@@ -10,6 +10,15 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  one(){
+    photo: "";
+    name: "";
+    fio: "";
+    adress: "";
+    email: "";
+    phone: ""
+
   }
 }
 </script>
